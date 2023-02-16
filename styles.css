@@ -1,0 +1,293 @@
+/* header de la pagina */
+/* Ajustar el tamaño de los iconos y el botón */
+.social-icons img {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: 0 1vw;
+  }
+  
+  .menu-button {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 2.5vw;
+  }
+  
+  /* Ajustar el layout de los iconos */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ajustar el layout del menú */
+  .main-menu {
+    display: none;
+    /* Agregar estilos para el menú desplegable aquí */
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Ajustar el tamaño de los iconos y el botón en pantallas más grandes */
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+    }
+  
+    .menu-button {
+      position: static;
+      font-size: 16px;
+    }
+  
+    /* Ajustar el layout de los iconos en pantallas más grandes */
+    .social-icons {
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    /* Ajustar el layout del menú en pantallas más grandes */
+    .main-menu {
+      display: block;
+      /* Agregar estilos para el menú completo aquí */
+    }
+  }
+  
+
+
+/* logo y lema de la pagina*/
+.logo-container {
+    text-align: center;
+  }
+  
+  .logo-container img {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  h1, p {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 767px) {
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  
+/*viedo container*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .channel-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .info h2,
+  .info p {
+    margin: 0;
+  }
+  
+  .subscribe-btn img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* div juegos container */
+  .juegoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .juegoContainer div {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .rectangulo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #F7F7F7;
+    cursor: pointer;
+  }
+  
+  .rectangulo img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  }
+  
+  .rectangulo p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 0;
+  }
+  
+  .rectangulo::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #F7F7F7;
+  }
+  
+  @media (max-width: 767px) {
+    .logo {
+      margin-right: 10px;
+    }
+  
+    .info {
+      text-align: center;
+    }
+  
+    .subscribe-btn img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .juegoContainer div {
+      flex-basis: 100%;
+    }
+  }
+  
+/* css de la tineda de la pagina*/  
+
+.productosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tiendaInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logoTienda {
+    width: 100px;
+    height: 100px;
+    background-color: #F7F7F7;
+    margin-right: 20px;
+  }
+  
+  .logoTienda img {
+    width: 80px;
+    height: 85px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .nombreTienda h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .botonTienda a {
+    display: inline-block;
+    background-color: #FFC107;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .botonTienda a:hover {
+    background-color: #FF9800;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #F7F7F7;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .producto img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .producto p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  
+  
+ 
+
+  
