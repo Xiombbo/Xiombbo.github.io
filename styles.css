@@ -1,63 +1,90 @@
-/* Estilos generales */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para el contenedor del logo */
+.logo-container {
+    position: absolute; /* Establece posición absoluta para el contenedor del logo */
+    top: 0; /* Coloca el contenedor en la parte superior del encabezado */
+    left: 80%; /* Coloca el contenedor en el centro horizontal del encabezado */
+    transform: translateX(-50%); /* Centra horizontalmente el contenedor */
+    z-index: 2; /* Establece una posición de apilamiento superior para el logo */
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 7em; /* Establece el ancho máximo del logo */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
 header {
-    background-color: #333;
-    color: white;
-    display: flex;
-    flex-direction: column; /* Cambiamos la dirección a columna */
-    align-items: center; /* Centramos horizontalmente */
-    padding: 20px 0; /* Aumentamos el espacio superior e inferior */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-#logo {
-    display: flex;
-    justify-content: center;
-    
-    margin-top: 20px; /* Agregamos espacio arriba del logo */
-
-}
-#logo img {
-    width: 5rem; /* Establece el ancho deseado para la imagen del logo */
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.producto {
-    border: 1px solid #ccc;
-    margin: 10px;
+    background-color: #72f0aa;
+    color: #fff;
     padding: 10px;
-    text-align: center;
-    transition: transform 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Añade posición relativa al encabezado */
+    z-index: 1; /* Establece una posición de apilamiento para el encabezado */
 }
 
-.producto:hover {
-    transform: scale(1.1);
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav-links {
+    padding-left: 10px;
+}
+
+.nav-links li {  
+    padding: 10px 30px; /* Añadimos espacio alrededor del texto */
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #5BD9B7;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/*diseño del contenido*/
+
+.content{
+margin-top: 40em;
 }
