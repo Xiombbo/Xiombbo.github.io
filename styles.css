@@ -1,0 +1,63 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección a columna */
+    align-items: center; /* Centramos horizontalmente */
+    padding: 20px 0; /* Aumentamos el espacio superior e inferior */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 20px; /* Agregamos espacio arriba del logo */
+
+}
+#logo img {
+    width: 5rem; /* Establece el ancho deseado para la imagen del logo */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.1);
+}
