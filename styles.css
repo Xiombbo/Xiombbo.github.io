@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -87,4 +85,47 @@ header {
 
 .content{
 margin-top: 40em;
+}
+
+/*estilos del la cuadricula de los productor --------------->*/
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la cuadrícula de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s; /* Agrega una transición de transformación para la animación */
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
 }
